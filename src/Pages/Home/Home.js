@@ -1,7 +1,6 @@
 import React from "react";
 import { CgMenuGridR } from "react-icons/cg";
-import { HiOutlineSearch } from "react-icons/hi";
-import { BsMic } from "react-icons/bs";
+import Input from "../../Components/Input/Input";
 import classes from "./Home.module.css";
 
 const Home = () => {
@@ -23,11 +22,7 @@ const Home = () => {
           src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_light_color_272x92dp.png"
           alt=""
         />
-        <form className={classes.searchInput}>
-          <HiOutlineSearch className={classes.icon_2} />
-          <input type="search" />
-          <BsMic className={classes.icon_2} />
-        </form>
+        <Input />
         <div className={classes.btnContainer}>
           <button className={`btn ${classes.searchBtn}`}>Google Search</button>
           <button className={`btn ${classes.searchBtn}`}>

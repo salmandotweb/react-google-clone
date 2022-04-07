@@ -1,0 +1,25 @@
+.link {
+  color: var(--white);
+  max-width: 60rem;
+  margin-bottom: 3rem;
+}
+.link > a {
+  color: #8ab4f8;
+  font-size: 2.1rem;
+  font-weight: 500;
+}
+.link > a:hover {
+  text-decoration: underline;
+}
+.link > p {
+  color: #bdc1c6;
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+.link > P:first-child {
+  margin-bottom: 0.7rem;
+}
+.link > p:last-child {
+  margin-top: 0.7rem;
+  line-height: 2.1rem;
+}

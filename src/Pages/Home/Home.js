@@ -1,6 +1,7 @@
 import React from "react";
 import Input from "../../Components/Input/Input";
 import Menu from "../../Components/Menu/Menu";
+import Tag from "../../Components/Tag/Tag";
 import classes from "./Home.module.css";
 
 const Home = () => {
@@ -44,6 +45,7 @@ const Home = () => {
           </button>
         </div>
       </div>
+      <Tag />
     </>
   );
 };

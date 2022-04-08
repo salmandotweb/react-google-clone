@@ -36,7 +36,6 @@
   transition: 250ms all;
 }
 .menuLink:hover > img {
-  /* transform: scale(0.95); */
   padding: 0.3rem;
   background: #eee;
   border-radius: 0.5rem;
@@ -47,4 +46,23 @@
 }
 .menuLink > p {
   color: #aaa;
+}
+@media screen and (max-width: 966px) {
+  .menuContainer {
+    max-width: 30rem;
+  }
+  .menuLink {
+    flex-basis: 50%;
+    margin: 2rem 0;
+  }
+}
+@media screen and (max-width: 588px) {
+  .menuLink > img {
+    max-width: 4rem;
+  }
+}
+@media screen and (max-width: 425px) {
+  .menuContainer {
+    max-width: 25rem;
+  }
 }

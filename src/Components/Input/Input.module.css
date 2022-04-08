@@ -24,3 +24,18 @@
 .alert {
   border: 0.1rem solid red;
 }
+@media screen and (max-width: 680px) {
+  .searchInput {
+    min-width: 80%;
+  }
+}
+@media screen and (max-width: 520px) {
+  .searchInput {
+    min-width: 90%;
+  }
+}
+@media screen and (max-width: 375px) {
+  .searchInput {
+    min-width: 95%;
+  }
+}

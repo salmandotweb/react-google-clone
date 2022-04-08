@@ -39,7 +39,7 @@ const Input = ({ className, value }) => {
       <HiOutlineSearch className={classes.icon_2} />
       <input
         type="search"
-        value={`${input}`}
+        value={input}
         placeholder={value}
         onChange={handleChange}
       />

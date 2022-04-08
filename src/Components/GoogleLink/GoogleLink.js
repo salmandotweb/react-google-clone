@@ -1,7 +1,7 @@
 import React from "react";
 import classes from "./GoogleLink.module.css";
 
-const Link = ({ link, displayLink, description, url, title }) => {
+const Link = ({ link, displayLink, description, url }) => {
   return (
     <div className={classes.link}>
       <p>{displayLink}</p>

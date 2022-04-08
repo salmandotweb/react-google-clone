@@ -1,0 +1,16 @@
+.tag {
+  position: absolute;
+  bottom: 1rem;
+  right: 1rem;
+}
+.tag > a {
+  color: #aaa;
+  text-transform: uppercase;
+  font-size: 1.2rem;
+}
+@media screen and (max-width: 425px) {
+  .tag > a {
+    font-size: 1rem;
+    color: rgb(138, 138, 138);
+  }
+}

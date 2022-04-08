@@ -41,3 +41,18 @@
 .searchBtn:not(:last-child) {
   margin-right: 1rem;
 }
+@media screen and (max-width: 520px) {
+  .searchContainer > img {
+    max-width: 20rem;
+  }
+}
+@media screen and (max-width: 425px) {
+  .searchBtn {
+    font-size: 1.3rem;
+  }
+}
+@media screen and (max-width: 375px) {
+  .searchContainer > img {
+    max-width: 15rem;
+  }
+}

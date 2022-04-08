@@ -23,3 +23,18 @@
   margin-top: 0.7rem;
   line-height: 2.1rem;
 }
+@media screen and (max-width: 1002px) {
+  .link {
+    max-width: 100%;
+  }
+}
+@media screen and (max-width: 425px) {
+  .link > p {
+    font-size: 1.3rem;
+  }
+}
+@media screen and (max-width: 375px) {
+  .link > p {
+    font-size: 1.2rem;
+  }
+}

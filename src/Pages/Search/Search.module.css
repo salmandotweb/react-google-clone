@@ -3,6 +3,7 @@
   align-items: center;
   justify-content: space-between;
   padding: 1rem 3rem;
+  position: relative;
 }
 .left {
   display: flex;
@@ -67,4 +68,76 @@
   flex-direction: column;
   align-items: flex-start;
   justify-content: center;
+}
+@media screen and (max-width: 1002px) {
+  .linksContainer {
+    padding: 1rem 5rem 1rem 19rem;
+  }
+}
+@media screen and (max-width: 920px) {
+  .btnContainer {
+    display: none;
+  }
+  .left {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    width: 100%;
+  }
+  .menu {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 0 0 1rem 19rem;
+    border-bottom: 0.1rem solid #3c4043;
+  }
+}
+@media screen and (max-width: 768px) {
+  .left {
+    flex-direction: column;
+  }
+  .left > a > img {
+    margin-right: 0rem;
+  }
+  .menu {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 0.1rem solid #3c4043;
+    padding: 0 0 1rem 0;
+  }
+  .result {
+    padding: 1rem 5rem;
+  }
+  .linksContainer {
+    padding: 1rem 5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+  }
+}
+@media screen and (max-width: 425px) {
+  .result {
+    padding: 1rem 3rem;
+  }
+  .linksContainer {
+    padding: 1rem 3rem;
+  }
+}
+@media screen and (max-width: 375px) {
+  .linksContainer {
+    padding: 1rem 2rem;
+  }
+  .result {
+    padding: 1rem 2rem;
+  }
+  .searchNavbar {
+    padding: 1rem 1rem;
+  }
+}
+@media screen and (max-width: 345px) {
+  .menuLink:last-child {
+    display: none;
+  }
 }

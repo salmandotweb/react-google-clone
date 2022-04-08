@@ -1,0 +1,50 @@
+.icon {
+  color: var(--white);
+  font-size: 2.3rem;
+  margin: 0 1.5rem;
+  position: relative;
+  cursor: pointer;
+  transition: 250ms all;
+}
+.icon:hover {
+  transform: scale(1.1);
+}
+.menuContainer {
+  background: var(--grey);
+  max-width: 55rem;
+  position: absolute;
+  top: 5rem;
+  right: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  border-radius: 0.5rem;
+}
+.menuLink {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  cursor: pointer;
+  flex-basis: 30%;
+  margin: 3rem 0;
+}
+.menuLink > img {
+  width: 5rem;
+  transition: 250ms all;
+}
+.menuLink:hover > img {
+  /* transform: scale(0.95); */
+  padding: 0.3rem;
+  background: #eee;
+  border-radius: 0.5rem;
+}
+.menuLink > img {
+  max-width: 5rem;
+  margin-bottom: 1rem;
+}
+.menuLink > p {
+  color: #aaa;
+}

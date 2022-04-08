@@ -6,35 +6,42 @@ import classes from "./Input.module.css";
 import { useStateValue } from "../../StateProvider";
 import { actionTypes } from "../../reducer";
 
-const Input = ({ className }) => {
+const Input = ({ className, value }) => {
   const [{}, dispatch] = useStateValue();
   const [input, setInput] = useState("");
+  const [alert, setAlert] = useState(false);
   const navigate = useNavigate();
 
   const handleSubmit = (e) => {
     e.preventDefault();
 
     if (input === "") {
-      alert("Type Something");
+      setAlert(true);
     } else {
       dispatch({
         type: actionTypes.SET_SEARCH_TERM,
         term: input,
       });
-
       navigate("/search");
     }
   };
+  const handleChange = (e) => {
+    setInput(e.target.value);
+    setAlert(false);
+  };
   return (
     <form
-      className={`${classes.searchInput} ${className}`}
+      className={`${alert && classes.alert} ${
+        classes.searchInput
+      } ${className}`}
       onSubmit={handleSubmit}
     >
       <HiOutlineSearch className={classes.icon_2} />
       <input
         type="search"
-        value={input}
-        onChange={(e) => setInput(e.target.value)}
+        value={`${input}`}
+        placeholder={value}
+        onChange={handleChange}
       />
       <BsMic className={classes.icon_2} />
     </form>

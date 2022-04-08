@@ -1,0 +1,74 @@
+[
+  {
+    "id": "1",
+    "image": "images/assistant.png",
+    "name": "Assistant",
+    "link": "https://assistant.google.com/"
+  },
+  {
+    "id": "2",
+    "image": "images/meet.png",
+    "name": "Meet",
+    "link": "https://meet.google.com/"
+  },
+  {
+    "id": "3",
+    "image": "images/gmail.png",
+    "name": "Gmail",
+    "link": "https://mail.google.com/"
+  },
+  {
+    "id": "4",
+    "image": "images/drive.png",
+    "name": "Drive",
+    "link": "https://drive.google.com/"
+  },
+  {
+    "id": "5",
+    "image": "images/calendar.png",
+    "name": "Calendar",
+    "link": "https://calendar.google.com/"
+  },
+  {
+    "id": "6",
+    "image": "images/photos.png",
+    "name": "Photos",
+    "link": "https://www.google.com/photos/"
+  },
+  {
+    "id": "7",
+    "image": "images/playStore.png",
+    "name": "Play",
+    "link": "https://play.google.com/store/apps"
+  },
+  {
+    "id": "8",
+    "image": "images/youtube.png",
+    "name": "Youtube",
+    "link": "https://www.youtube.com/"
+  },
+  {
+    "id": "9",
+    "image": "images/classroom.png",
+    "name": "Classroom",
+    "link": "https://classroom.google.com/"
+  },
+  {
+    "id": "10",
+    "image": "images/contacts.png",
+    "name": "Contacts",
+    "link": "https://contacts.google.com/"
+  },
+  {
+    "id": "11",
+    "image": "images/translater.png",
+    "name": "Translater",
+    "link": "https://translate.google.com/"
+  },
+  {
+    "id": "12",
+    "image": "images/map.png",
+    "name": "Map",
+    "link": "https://www.google.com/maps"
+  }
+]

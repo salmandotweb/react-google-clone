@@ -1,15 +1,29 @@
 import React from "react";
-import { CgMenuGridR } from "react-icons/cg";
 import Input from "../../Components/Input/Input";
+import Menu from "../../Components/Menu/Menu";
 import classes from "./Home.module.css";
 
 const Home = () => {
   return (
     <>
       <div className={classes.header}>
-        <button className="btn">Gmail</button>
-        <button className="btn">Images</button>
-        <CgMenuGridR className={classes.icon} />
+        <a
+          href="https://mail.google.com/"
+          target="_blank"
+          rel="noreferrer noopener"
+          className="btn"
+        >
+          Gmail
+        </a>
+        <a
+          href="https://www.google.com/photos/"
+          target="_blank"
+          rel="noreferrer noopener"
+          className="btn"
+        >
+          Images
+        </a>
+        <Menu />
         <div className={classes.user}>
           <img
             src="https://www.freepnglogos.com/uploads/google-logo-png/google-logo-png-webinar-optimizing-for-success-google-business-webinar-13.png"

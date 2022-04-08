@@ -3,13 +3,13 @@ import Input from "../../Components/Input/Input";
 import GoogleLink from "../../Components/GoogleLink/GoogleLink";
 import { AiOutlineSetting } from "react-icons/ai";
 import { RiVideoLine } from "react-icons/ri";
-import { CgMenuGridR } from "react-icons/cg";
 import { BiSearch, BiNews, BiImage } from "react-icons/bi";
 import { BsThreeDotsVertical } from "react-icons/bs";
 import { Link } from "react-router-dom";
 import classes from "./Search.module.css";
 import useSearch from "../../CustomHooks/useSearch";
 import { useStateValue } from "../../StateProvider";
+import Menu from "../../Components/Menu/Menu";
 
 const Search = () => {
   const [{ term }] = useStateValue();
@@ -25,11 +25,11 @@ const Search = () => {
               alt=""
             />
           </Link>
-          <Input className={classes.Input} />
+          <Input className={classes.Input} value={term} />
         </div>
         <div className={classes.btnContainer}>
           <AiOutlineSetting className={classes.icon} />
-          <CgMenuGridR className={classes.icon} />
+          <Menu />
           <div className={classes.user}>
             <img
               src="https://www.freepnglogos.com/uploads/google-logo-png/google-logo-png-webinar-optimizing-for-success-google-business-webinar-13.png"
